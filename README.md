@@ -34,6 +34,7 @@ Please change the path of `building_editor_models/stairs` to the real path on yo
 
 ```
 git submodule update --init --recursive
+```
 
 Then you can use catkin_make to build:
 ```
