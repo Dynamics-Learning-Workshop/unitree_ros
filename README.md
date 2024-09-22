@@ -1,3 +1,24 @@
+# WE UPDATED SOME PARAMETERS AND SCRIPTS FOR PERSONAL USE
+# TL;DR
+```
+git clone https://github.com/Dynamics-Learning-Workshop/unitree_ros.git
+sudo apt-get install ros-noetic-controller-interface  ros-noetic-gazebo-ros-control ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller
+```
+
+And open the file `unitree_gazebo/worlds/stairs.world`. At the end of the file modify your own path:
+```
+<include>
+    <uri>model:///root/leg_ws/src/unitree_ros/unitree_gazebo/worlds/building_editor_models/stairs</uri> 
+</include>
+```
+```
+git submodule update --init --recursive
+```
+```
+cd ~/leg_ws
+catkin_make
+```
+
 # Introduction
 Here are the ROS simulation packages for Unitree robots, You can load robots and joint controllers in Gazebo, so you can perform low-level control (control the torque, position and angular velocity) of the robot joints. Please be aware that the Gazebo simulation cannot do high-level control, namely walking. Aside from these simulation functions, you can also control your real robots in ROS with the [unitree_ros_to_real](https://github.com/unitreerobotics/unitree_ros_to_real) packages. For real robots, you can do high-level and low-level control using our ROS packages.
 
