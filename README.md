@@ -17,6 +17,7 @@ git submodule update --init --recursive
 ```
 cd ~/leg_ws
 catkin_make
+./leg_ws/src/unitree_ros/sim.sh
 ```
 
 # Introduction
