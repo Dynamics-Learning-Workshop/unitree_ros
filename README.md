@@ -2,7 +2,7 @@
 # TL;DR
 ```
 git clone https://github.com/Dynamics-Learning-Workshop/unitree_ros.git
-sudo apt-get install ros-noetic-controller-interface  ros-noetic-gazebo-ros-control ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller
+sudo apt-get install ros-noetic-controller-interface  ros-noetic-gazebo-ros-control ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller ros-noetic-move-base-msgs
 ```
 
 And open the file `unitree_gazebo/worlds/stairs.world`. At the end of the file modify your own path:
